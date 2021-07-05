@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--link icones library-->
+    <script src="https://kit.fontawesome.com/a7b1873564.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Oh my food</title>
 </head>
 <body>
-    <p style="color: aqua;">Bonjour</p> 
+
+    <!--HEADER-->
+    <h1>ohmyfood</h1>
+
+    <form method="post" action=".php">
+        <!--Icône de localisation-->
+        <label for="map"><a href=""></a><i class="fas fa-map-marker-alt"></i></label>
+        <!--Ville-->
+        <input type="text" name="location" id="map" size="25" maxlength="50" value="Paris, Belleville" />
+    </form>    
     
+    <h2>Réservez le menu qui<br>vous convient</br></h2>
+    <p>Découvrez des restaurants d'exception,<br>séléctionnés par nos soins</br></p>
+    <button type="submit" class="bouton_explorer">Explorez nos restaurants</button>
 </body>
 </html>
