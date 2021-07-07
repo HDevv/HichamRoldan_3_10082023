@@ -18,27 +18,36 @@
 <body>
 
     <!--HEADER-->
-    <h1>ohmyfood</h1>
+    <header>
+    <div>
+        <img alt="logo" src="Projet_3/images/logo/ohmyfood.png">
+    </div>
 
     <form method="post" action=".php">
         <!--Icône de localisation-->
-        <label for="map"><a href=""></a><i class="fas fa-map-marker-alt"></i></label>
+        <div class="iconelocation">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
         <!--Ville-->
-        <input type="text" name="location" id="map" size="25" maxlength="50" value="Paris, Belleville" />
+        <div class="barlocation">
+        <input type="text" id="recherche" placeholder="Paris, Belleville" />
+        </div>
     </form>    
-    
-    <h2>Réservez le menu qui<br>vous convient</br></h2>
-    <p>Découvrez des restaurants d'exception,<br>séléctionnés par nos soins</br></p>
+    </header>
+
+    <hgroup>
+    <h1>Réservez le menu qui<br>vous convient</br></h1>
+    <h2>Découvrez des restaurants d'exception,<br>séléctionnés par nos soins</br></h2>
+    </hgroup>
     <button type="submit" class="bouton_explorer">Explorer nos restaurants</button>
 
     <!--Partie FONCTIONNEMENT-->
     <aside class="etapes_menu">
-    <h2>Fonctionnement</h2>
+    <h1>Fonctionnement</h1>
     <div class="Fonctionnement">
         <a class="etape_box" href="#">
             <span class="numero">1</span>
-            <span class="icone"><i class="fas fa-store"></i></span><span class="text">Composez votre menu</span>
-
+            <span class="icone"><i class="fas fa-store"></i></span><span class="text">Choisissez un restaurant</span>
         </a>
 
         
