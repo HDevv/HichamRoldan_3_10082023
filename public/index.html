@@ -19,8 +19,8 @@
 
     <!--HEADER-->
     <header>
-    <div>
-        <img alt="logo" src="Projet_3/images/logo/ohmyfood.png">
+    <div class="logo">
+        <img alt="logo" src="Projet_3/public/images/logo/ohmyfood.png">
     </div>
 
     <form method="post" action=".php">
@@ -35,11 +35,13 @@
     </form>    
     </header>
 
+    <article class="fondgrisexplore">
     <hgroup>
     <h1>Réservez le menu qui<br>vous convient</br></h1>
     <h2>Découvrez des restaurants d'exception,<br>séléctionnés par nos soins</br></h2>
     </hgroup>
     <button type="submit" class="bouton_explorer">Explorer nos restaurants</button>
+    </article>
 
     <!--Partie FONCTIONNEMENT-->
     <aside class="etapes_menu">
@@ -53,9 +55,18 @@
             <span class="numero">2</span>
             <span class="icone"><i class="fas fa-list-ul"></i></span><span class="text">Composez votre menu</span>
         </a>
-
-        
+        <a class="etape_box" href="#">
+            <span class="numero">3</span>
+            <span class="icone"><i class="fas fa-store"></i></i></span><span class="text">Dégustez au restaurant</span>
+        </a>   
     </div> 
     </aside>
+
+    <section>
+        <div class="fondgrisrestaurants">
+            <h1>Restaurants</h1>
+            <article class="rest"></article>
+        </div>
+    </section>
 </body>
 </html>
