@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,129 +16,137 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Oh my food</title>
 </head>
+
 <body>
 
     <!--HEADER-->
     <header>
-    <div class="logo">
-        <img alt="logo" src="Projet_3/public/images/logo/ohmyfood.png">
-    </div>
+        <div class="logo">
+            <img alt="logo" src="Projet_3/public/images/logo/ohmyfood.png">
+        </div>
 
-    <form method="post" action=".php">
-        <!--Icône de localisation-->
-        <div class="iconelocation">
-            <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <!--Ville-->
-        <div class="barlocation">
-        <input type="text" id="recherche" placeholder="Paris, Belleville" />
-        </div>
-    </form>    
+        <form method="post" action=".php">
+            <!--Icône de localisation-->
+            <div class="iconelocation">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <!--Ville-->
+            <div class="barlocation">
+                <input type="text" id="recherche" placeholder="Paris, Belleville" />
+            </div>
+        </form>
     </header>
     <main>
-    <article class="fondgrisexplore">
-    <hgroup>
-    <h1>Réservez le menu qui<br>vous convient</br></h1>
-    <h2>Découvrez des restaurants d'exception,<br>séléctionnés par nos soins</br></h2>
-    </hgroup>
-    <button type="submit" class="bouton_explorer">Explorer nos restaurants</button>
-    </article>
+        <article class="fondgrisexplore">
+            <hgroup>
+                <h1>Réservez le menu qui<br>vous convient</br></h1>
+                <h2>Découvrez des restaurants d'exception,<br>séléctionnés par nos soins</br></h2>
+            </hgroup>
+            <button type="submit" class="bouton_explorer">Explorer nos restaurants</button>
+        </article>
 
-    <!--Partie FONCTIONNEMENT-->
-    <aside class="etapes_menu">
-    <h1>Fonctionnement</h1>
-    <div class="Fonctionnement">
-        <a class="etape_box" href="#">
-            <span class="numero">1</span>
-            <span class="icone"><i class="fas fa-store"></i></span><span class="text">Choisissez un restaurant</span>
-        </a>
-        <a class="etape_box" href="#">
-            <span class="numero">2</span>
-            <span class="icone"><i class="fas fa-list-ul"></i></span><span class="text">Composez votre menu</span>
-        </a>
-        <a class="etape_box2" href="#">
-            <span class="numero">3</span>
-            <span class="icone"><i class="fas fa-store"></i></i></span><span class="text">Dégustez au restaurant</span>
-        </a>   
-    </div> 
-    </aside>
+        <!--Partie FONCTIONNEMENT-->
+        <aside class="etapes_menu">
+            <h1>Fonctionnement</h1>
+            <div class="Fonctionnement">
+                <a class="etape_box" href="#">
+                    <span class="numero">1</span>
+                    <span class="icone"><i class="fas fa-store"></i></span><span class="text">Choisissez un
+                        restaurant</span>
+                </a>
+                <a class="etape_box" href="#">
+                    <span class="numero">2</span>
+                    <span class="icone"><i class="fas fa-list-ul"></i></span><span class="text">Composez votre
+                        menu</span>
+                </a>
+                <a class="etape_box2" href="#">
+                    <span class="numero">3</span>
+                    <span class="icone"><i class="fas fa-store"></i></i></span><span class="text">Dégustez au
+                        restaurant</span>
+                </a>
+            </div>
+        </aside>
 
-    <section>
-        <div class="fondgrisrestaurants">
-            <h1>Restaurants</h1>
-            <article class="restaurantbox1">
-                <figure class="header_img">
-                    <img alt="La palette du goût" class="restaurant_img"
-                    src="public/images/restaurants/Ménilmontant.jpg">
-                    <figcaption class="btn_nouveau">Nouveau</figcaption>
-                </figure>
-                <header class="restaubox_content">
-                    <hgroup>
-                        <h2><a href="la_palette_du_gout.html" class="strong">La palette du goût</a></h2>
-                        <h3 class="footer">Ménilmontant</h3>
-                    </hgroup>
-                    <div class="like">
-                        <i class="far fa-heart default-icon"></i>
-                        <i class="fas fa-heart hover-icon"></i>
-                    </div>
-                </header>
-            </article>
+        <section>
+            <div class="fondgrisrestaurants">
+                <h1>Restaurants</h1>
 
-            <article class="restaurantbox2">
-                <figure class="header_img">
-                    <img alt="La note enchantée" class="restaurant_img"
-                    src="public/images/restaurants/Charonne.jpg">
-                    <figcaption class="btn_nouveau">Nouveau</figcaption>
-                </figure>
-                <header class="restaubox_content">
-                    <hgroup>
-                        <h2><a href="la_palette_du_gout.html" class="strong">La note enchantée</a></h2>
-                        <h3 class="footer">Charonnet</h3>
-                    </hgroup>
-                    <div class="like">
-                        <i class="far fa-heart default-icon"></i>
-                        <i class="fas fa-heart hover-icon"></i>
-                    </div>
-                </header>
-            </article>
+                <!--LA PALETTE DU GOUT-->
+                <article class="restaurantbox1">
+                    <figure class="header_img">
+                        <img alt="La palette du goût" class="restaurant_img"
+                            src="public/images/restaurants/Ménilmontant.jpg">
+                        <figcaption class="btn_nouveau">Nouveau</figcaption>
+                    </figure>
+                    <header class="restaubox_content">
+                        <hgroup>
+                            <h2><a href="la_palette_du_gout.html" class="strong">La palette du goût</a></h2>
+                            <h3 class="footer">Ménilmontant</h3>
+                        </hgroup>
+                        <div class="like">
+                            <i class="far fa-heart default-icon"></i>
+                            <i class="fas fa-heart hover-icon"></i>
+                        </div>
+                    </header>
+                </article>
 
-            <article class="restaurantbox3">
-                <figure class="header_img">
-                    <img alt="A la française" class="restaurant_img"
-                    src="public/images/restaurants/Cité_Rouge.jpg">
-                    <figcaption class="btn_nouveau">Nouveau</figcaption>
-                </figure>
-                <header class="restaubox_content">
-                    <hgroup>
-                        <h2><a href="a_la_francaise.html" class="strong">A la française</a></h2>
-                        <h3 class="footer">Cité Rouge</h3>
-                    </hgroup>
-                    <div class="like">
-                        <i class="far fa-heart default-icon"></i>
-                        <i class="fas fa-heart hover-icon"></i>
-                    </div>
-                </header>
-            </article>
+                <!--LA NOTE ENCHANTEE-->
+                <article class="restaurantbox2">
+                    <figure class="header_img">
+                        <img alt="La note enchantée" class="restaurant_img"
+                            src="public/images/restaurants/Charonne.jpg">
+                        <figcaption class="btn_nouveau">Nouveau</figcaption>
+                    </figure>
+                    <header class="restaubox_content">
+                        <hgroup>
+                            <h2><a href="la_palette_du_gout.html" class="strong">La note enchantée</a></h2>
+                            <h3 class="footer">Charonnet</h3>
+                        </hgroup>
+                        <div class="like">
+                            <i class="far fa-heart default-icon"></i>
+                            <i class="fas fa-heart hover-icon"></i>
+                        </div>
+                    </header>
+                </article>
 
-            <article class="restaurantbox4">
-                <figure class="header_img">
-                    <img alt="Le délice des sens" class="restaurant_img"
-                    src="public/images/restaurants/Cité_Rouge.jpg">
-                    <figcaption class="btn_nouveau">Nouveau</figcaption>
-                </figure>
-                <header class="restaubox_content">
-                    <hgroup>
-                        <h2><a href="le_delice_des_sens.html" class="strong">Le délice des sens</a></h2>
-                        <h3 class="footer">Folie-Méricourt</h3>
-                    </hgroup>
-                    <div class="like">
-                        <i class="far fa-heart default-icon"></i>
-                        <i class="fas fa-heart hover-icon"></i>
-                    </div>
-                </header>
-            </article>
-        </div>
-    </section>
+                <!--A LA FRANCAISE-->
+                <article class="restaurantbox3">
+                    <figure class="header_img">
+                        <img alt="A la française" class="restaurant_img" src="public/images/restaurants/Cité_Rouge.jpg">
+                        <figcaption class="btn_nouveau">Nouveau</figcaption>
+                    </figure>
+                    <header class="restaubox_content">
+                        <hgroup>
+                            <h2><a href="a_la_francaise.html" class="strong">A la française</a></h2>
+                            <h3 class="footer">Cité Rouge</h3>
+                        </hgroup>
+                        <div class="like">
+                            <i class="far fa-heart default-icon"></i>
+                            <i class="fas fa-heart hover-icon"></i>
+                        </div>
+                    </header>
+                </article>
+
+                <!--LE DELICE DES SENS-->
+                <article class="restaurantbox4">
+                    <figure class="header_img">
+                        <img alt="Le délice des sens" class="restaurant_img"
+                            src="public/images/restaurants/Cité_Rouge.jpg">
+                        <figcaption class="btn_nouveau">Nouveau</figcaption>
+                    </figure>
+                    <header class="restaubox_content">
+                        <hgroup>
+                            <h2><a href="le_delice_des_sens.html" class="strong">Le délice des sens</a></h2>
+                            <h3 class="footer">Folie-Méricourt</h3>
+                        </hgroup>
+                        <div class="like">
+                            <i class="far fa-heart default-icon"></i>
+                            <i class="fas fa-heart hover-icon"></i>
+                        </div>
+                    </header>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -158,4 +167,5 @@
         </div>
     </footer>
 </body>
+
 </html>
