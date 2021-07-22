@@ -5,6 +5,9 @@
  *   '
  *   sass\main.scss 4:9  root stylesheet */
 
+
+ /**PAGE LOADER**/
+
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
       "Droid Sans Mono", monospace, monospace;
@@ -72,13 +75,19 @@ body {
     }
 }
 
-
-
-
-
-
 .logo {
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 16px #000000a2; 
+}
+
+form {
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
   display: flex;
   align-items: center;
-}
+  justify-content: center; }
+
 
