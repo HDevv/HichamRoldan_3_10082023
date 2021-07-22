@@ -90,4 +90,8 @@ form {
   align-items: center;
   justify-content: center; }
 
+  .iconelocation {
+    max-width: 300px; 
+  }
 
+  
