@@ -1,0 +1,17 @@
+/*on va importer ici tous nos fichiers, partir du plus général au plus précis, dans l'ordre
+pour éviter que ça écrase des attributs*/
+
+@import './Vendors/vendors.scss';
+
+@import './Utils/variables.scss';
+
+@import './Base/base.scss';
+
+@import './Layout/layout.scss';
+
+@import './Pages/pages.scss';
+
+@import './Composants/componat.scss';
+
+@import './Themes/theme.scss';
+
