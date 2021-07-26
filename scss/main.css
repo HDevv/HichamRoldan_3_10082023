@@ -142,7 +142,66 @@
           left: 10px; }
         .barlocation_icon i {
           position: relative;
-          left: 0; }
- 
+          left: 0; 
+        }
+
+
+    .fonctiontitle {
+      margin: 20px;
+      margin-top: 35px;
+      font-weight: bold;
+      font-size: 18px; 
+    }
+
+    .etape_box {
+      display: flex;
+      align-items: center;
+      margin: 15px; }
+      .etape_box span {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f5f5f5ec;
+        padding: 20px;
+        width: 100%;
+        border-radius: 13px;
+        font-size: 15px;
+        box-shadow: 0 0 10px #a3a3a373;
+        font-weight: bold;
+        margin-left: -5px;
+        z-index: -1; }
+        .etape_box span i {
+          margin-right: 5px;
+          color: grey; }
+      .etape_box p {
+        color: #fff;
+        background-color: #9356dc;
+        border-radius: 50%;
+        padding: 2px;
+        width: 20px;
+        text-align: center;
+        z-index: 1; 
+      }
+
+
+      .fondgrisrestaurants {
+        margin-top: 80px;
+        background-color: #f5f5f5ec;
+        padding-bottom: 10px; }
+      
+      .rest_title {
+        margin: 20px;
+        padding-top: 60px;
+        font-weight: bold;
+        font-size: 18px; }
+      
+      .restaurantboxcontent {
+        margin-top: 25px; }
+      
+    
+    
+
+
+
+
    
 }
