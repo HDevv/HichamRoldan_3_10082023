@@ -118,7 +118,31 @@
       transition: box-shadow 250ms; }
       .btn_explorer:hover {
         box-shadow: 0 0 16px #00000088;
-        filter: brightness(1.15); }
+        filter: brightness(1.15); 
+      }
+
+
+      header {
+        display: flex;
+        background-color: #fff; }
+      
+      .barlocation {
+        background-color: #e2e1e1d8;
+        display: flex;
+        justify-content: center; }
+      
+      .barlocation_icon {
+        display: flex;
+        position: relative;
+        align-items: center; }
+        .barlocation_icon p {
+          position: relative;
+          font-size: 15px;
+          font-weight: 600;
+          left: 10px; }
+        .barlocation_icon i {
+          position: relative;
+          left: 0; }
  
    
 }
