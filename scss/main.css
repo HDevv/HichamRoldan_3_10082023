@@ -84,14 +84,41 @@
     align-items: center;
     justify-content: center;
  }
- body {
-     background-color: crimson;
- }
+ 
   
-    .iconelocation {
-      max-width: 300px; 
-    }
+  .iconelocation {
+    max-width: 300px; 
+  }
    
+  .foncgrisexplore {
+    background-color: #f5f5f5ec;
+    padding: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    text-align: center; }
+    .foncgrisexplore h1 {
+      font-size: 18px;
+      text-align: center;
+      font-weight: bold; }
+    .foncgrisexplore p {
+      font-size: 14px;
+      text-align: center; }
+    .btn_explorer {
+      top: 80%;
+      padding: 13px 20px 13px 20px;
+      font-size: 12px;
+      margin: 15px;
+      color: white;
+      background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+      box-shadow: 0 0 16px #0f0f0f5b;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: filter 300ms;
+      transition: box-shadow 250ms; }
+      .btn_explorer:hover {
+        box-shadow: 0 0 16px #00000088;
+        filter: brightness(1.15); }
  
    
 }
