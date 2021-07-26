@@ -1,6 +1,6 @@
-@mixin btn
+@mixin btn {
     color: white
-    background: linear-gradient(to bottom, $secondary-color 0%, $primary-color 100%)
+    background : linear-gradient(to bottom, $secondary-color 0%, $primary-color 100%)
     box-shadow: 0 0 16px #0f0f0f5b
     border: none
     border-radius: 50px
@@ -10,3 +10,5 @@
     &:hover
         box-shadow: 0 0 16px #00000088
         filter: brightness(1.15)
+    
+    }
