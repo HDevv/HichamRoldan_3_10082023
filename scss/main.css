@@ -268,6 +268,85 @@
         max-width: 40px; 
       }
       
+      .shrikhand{
+        font-size: 20px;
+        position: relative;
+        left: 5%;
+        top: 20px;
+        font-family: Shrikhand; }
+      
+      .like {
+        position: relative;
+        right: 10%;
+        font-size: 25px;
+        top: 20px; }
+      
+      .cardmenu {
+        position: relative;
+        margin: 15px;
+        background-color: #fff;
+        box-shadow: 0 0 10px #a3a3a373;
+        border-radius: 10px;
+        padding: 25px;
+        cursor: pointer;
+        max-width: 78%;
+        z-index: 1;
+        margin: auto;
+        margin-bottom: 10px;
+        overflow: hidden; }
+        .menu_title {
+          position: absolute;
+          top: -30%;
+          left: 5%;
+          font-size: 14px;
+          font-weight: bold;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 80%; }
+        .menuCard__text {
+          position: absolute;
+          top: 40%;
+          left: 5%;
+          font-size: 12px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          width: 80%; }
+        .menuCard__price {
+          position: absolute;
+          right: 5px;
+          top: 5%; }
+        .menuCard span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          z-index: 1;
+          color: #fff;
+          font-size: 20px;
+          padding: 15px;
+          border-radius: 0 10px 10px 0;
+          background-color: #99e2d0;
+          top: 0;
+          transform-origin: right 50%;
+          transition: .5s;
+          right: -49px;
+          width: 17px; }
+        .menuCard:hover .menuCard__text {
+          width: 60%; }
+        .menuCard:hover .menuCard__title {
+          width: 60%; }
+        .menuCard:hover span {
+          transition: ease-in-out .5s;
+          transform: translate(-49px); }
+        .menuCard:hover .menuCard__price {
+          transition: ease-in-out .5s;
+          transform: translate(-49px); }
+        .menuCard:hover i {
+          animation: rotate .6s;
+          animation-timing-function: ease-in-out;
+          transition-delay: 150ms; }
     
     
 
