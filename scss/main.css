@@ -227,7 +227,7 @@
             font-size: 25px;
             margin-right: 5%; }
       
-      .restCard__new {
+      .btn_nouveau {
         position: absolute;
         right: 5px;
         top: 5px; }
@@ -236,9 +236,37 @@
           color: #1c9965;
           padding: 5px; }
       
-      .restCard {
-        position: relative; }
+      .restaurantbox {
+        position: relative; 
+      }
       
+      .cover-_img {
+        height: 217px; }
+        .cover_img img {
+          height: 217px;
+          object-fit: cover; 
+        }
+      
+      .restaurant_title {
+        display: flex;
+        position: relative;
+        bottom: 49px;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50px 50px 0 0; 
+      }
+      
+      .restaurantsubtitle {
+        display: flex;
+        font-size: 14px;
+        letter-spacing: .5px;
+        align-items: center;
+        margin-left: 15px;
+        font-weight: normal;
+        border-bottom: solid 2px #99e2d0;
+        max-width: 40px; 
+      }
       
     
     
