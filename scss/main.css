@@ -304,7 +304,7 @@
           overflow: hidden;
           white-space: nowrap;
           width: 80%; }
-        .menuCard__text {
+        .menu_txt { /*ajout des classes menu_txt dans les menus en html*/
           position: absolute;
           top: 40%;
           left: 5%;
@@ -313,11 +313,11 @@
           overflow: hidden;
           white-space: nowrap;
           width: 80%; }
-        .menuCard__price {
+        .prix {
           position: absolute;
           right: 5px;
           top: 5%; }
-        .menuCard span {
+        .box_hover {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -333,22 +333,22 @@
           transition: .5s;
           right: -49px;
           width: 17px; }
-        .menuCard:hover .menuCard__text {
+        .cardmenu:hover .menu_text {
           width: 60%; }
-        .menuCard:hover .menuCard__title {
+        .cardmenu:hover .menu_title {
           width: 60%; }
-        .menuCard:hover span {
+        .box_hover:hover {
           transition: ease-in-out .5s;
           transform: translate(-49px); }
-        .menuCard:hover .menuCard__price {
+        .cardmenu:hover .prix {
           transition: ease-in-out .5s;
           transform: translate(-49px); }
-        .menuCard:hover i {
+        .cardmenu:hover i {
           animation: rotate .6s;
           animation-timing-function: ease-in-out;
           transition-delay: 150ms; 
         }
-
+/*----------------------------------*/
         @keyframes rotate {
           from {
             transform: rotate(0deg); }
