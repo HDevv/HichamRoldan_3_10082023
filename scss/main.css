@@ -346,7 +346,90 @@
         .menuCard:hover i {
           animation: rotate .6s;
           animation-timing-function: ease-in-out;
-          transition-delay: 150ms; }
+          transition-delay: 150ms; 
+        }
+
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg); }
+          to {
+            transform: rotate(360deg); } }
+        
+        .restCard__icon--empty {
+          position: relative;
+          z-index: 1;
+          cursor: pointer; }
+        
+        .restCard__icon--filled {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: -1;
+          background: linear-gradient(#ff79da, #9356dc);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          opacity: 0;
+          transform: scale(0);
+          transform-origin: bottom;
+          transition: .5s ease;
+          animation-timing-function: cubic-bezier(0.06, 0.7, 0.9, 0.28); }
+        
+        .restCard__icon--empty:hover .restCard__icon--filled {
+          transform: scale(1);
+          opacity: 1; }
+        
+        .restCard__icon--empty:hover {
+          background: linear-gradient(#ff79da, #9356dc);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        
+        .main {
+          position: relative; }
+        
+        .btn__wrapper {
+          display: flex;
+          position: relative;
+          align-items: center;
+          justify-content: center; }
+        
+        .btn {
+          position: relative;
+          margin: 30px 30px 60px 30px;
+          padding: 13px 43px 13px 43px;
+          font-size: 14px;
+          color: white;
+          background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+          box-shadow: 0 0 16px #0f0f0f5b;
+          border: none;
+          border-radius: 50px;
+          cursor: pointer;
+          transition: filter 300ms;
+          transition: box-shadow 250ms; }
+          .btn:hover {
+            box-shadow: 0 0 16px #00000088;
+            filter: brightness(1.15); }
+        
+        .menu .menuCard {
+          opacity: 0;
+          animation: transition-delayed .5s forwards; }
+        
+        .menu .menuCard:nth-child(1) {
+          animation-delay: .1s; }
+        
+        .menu .menuCard:nth-child(2) {
+          animation-delay: .2s; }
+        
+        .menu .menuCard:nth-child(3) {
+          animation-delay: .3s; }
+        
+        .menu .menuCard:nth-child(4) {
+          animation-delay: .4s; }
+        
+        .menu .menuCard:nth-child(5) {
+          animation-delay: .5s; }
+        
+        .menu .menuCard:nth-child(6) {
+          animation-delay: .6s; }
     
     
 
