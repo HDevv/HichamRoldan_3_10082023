@@ -8,13 +8,13 @@
     flex-direction: column;  
   }
 
-  .logo {
+  .headerMenu {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 16px #000000a2;
   }
 
-  form {
+  .location_content { /*CORRIGE*/
     padding: 5px;
     width: 50%;
     margin: 0 auto;
@@ -29,7 +29,7 @@
     left: 5%;
     top: 4%; }
 
-  .iconelocation {
+  .headerMenu_logo {
     max-width: 300px;
   }
 /*--------------------------------*/
@@ -68,29 +68,29 @@
     filter: brightness(1.15);
   }
 
-  header {
+  .headerMenu {
     display: flex;
     background-color: #fff;
   }
 
-  .barlocation {
+  .header_location {
     background-color: #e2e1e1d8;
     display: flex;
     justify-content: center;
   }
 
-  .barlocation_icon {
+  .location_content {
     display: flex;
     position: relative;
     align-items: center;
   }
-  .barlocation_icon p {
+  .location_content p {
     position: relative;
     font-size: 15px;
     font-weight: 600;
     left: 10px;
   }
-  .barlocation_icon i {
+  .location_content i {
     position: relative;
     left: 0;
   }
