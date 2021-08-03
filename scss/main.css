@@ -12,13 +12,16 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 16px #000000a2;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: #fff;
   }
 
   .location_content { /*CORRIGE*/
     padding: 5px;
     width: 50%;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 7px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +49,7 @@
     font-weight: bold;
   }
   .fondgrisexplore p {
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
   }
   .btn_explorer {
@@ -68,21 +71,19 @@
     filter: brightness(1.15);
   }
 
-  .headerMenu {
-    display: flex;
-    background-color: #fff;
-  }
-
   .header_location {
     background-color: #e2e1e1d8;
     display: flex;
+    height: 50px;
     justify-content: center;
   }
 
   .location_content {
     display: flex;
     position: relative;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
   .location_content p {
     position: relative;
@@ -148,7 +149,7 @@
     font-size: 18px;
   }
 
-  .restaurantboxcontent {
+  .restauboxcontent {
     margin-top: 25px;
   }
 
@@ -163,7 +164,7 @@
   .restaurantbox:hover {
     transform: scale(1.01);
   }
-  .restaurantbox img {
+  .restaurant_img {
     border-radius: 20px 20px 0 0;
     height: 125px;
     object-fit: cover;
@@ -192,6 +193,7 @@
     position: absolute;
     right: 5px;
     top: 5px;
+    border-radius: 5px;
   }
   .btn_nouveau {
     /*revoir l'exo, peut être qu'il faut mettre une p pour que ça passe*/
