@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/a7b1873564.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="./scss/main.css">
-    
+
 
 
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
@@ -26,17 +26,19 @@
 
 <body>
     <!--      PAGE LOADER          (à ajouter)        -->
-   
+
 
     <!--HEADER-->
-    
-       <!--Logo ohmyfood .png supprimé-->
-       
+
+    <!--Logo ohmyfood .png supprimé-->
+
     <header class="headerMenu">
         <div class="header"><img class="headerMenu_logo" src="images/logo/ohmyfood@2x.svg" alt=""></div>
     </header>
     <div class="header_location">
-        <div class="location_content"><i class="fas fa-map-marker-alt"></i><p>Paris, Belleville</p></div>
+        <div class="location_content"><i class="fas fa-map-marker-alt"></i>
+            <p>Paris, Belleville</p>
+        </div>
     </div>
     <main>
         <article class="fondgrisexplore">
@@ -66,87 +68,97 @@
             </div>
         </div>
 
-        <section>
-            <div class="fondgrisrestaurants">
-                <div class="restheader">
-                    <h2 class="rest_title">Restaurants</h2>
-                </div>
-                <!--LA PALETTE DU GOUT-->
-                <article class="restaurantbox">
-                    <figure class="header_img">
-                        <img alt="La palette du goût" class="restaurant_img"
-                            src="images/restaurants/Ménilmontant.jpg">
-                        <figcaption class="btn_nouveau">Nouveau</figcaption>
-                    </figure>
-                    <header class="restaubox_content">
-                        <hgroup>
-                            <h3><a href="la_palette_du_gout.html" class="strong">La palette du goût</a></h3>
-                            <p class="footer">Ménilmontant</p>
-                        </hgroup>
-                        <div class="like">
-                            <i class="far fa-heart default-icon"></i>
-                            <i class="fas fa-heart hover-icon"></i>
+        <div class="fondgrisrestaurants">
+            <header class="restheader">
+                <h2 class="rest_title">Restaurants</h2>
+            </header>
+            <!--LA PALETTE DU GOUT-->
+            <div class="restaurantbox">
+                <a href="la_palette_du_gout.html">
+                    <figure class="carte">
+                        <img alt="La palette du goût" class="restaurant_img" src="images/restaurants/Ménilmontant.jpg">
+                        <div class="btn_nouveau">
+                            <p>Nouveau</p>
                         </div>
-                    </header>
-                </article>
+                        <figcaption>
+                            <div class="carte_info">
+                                <h3 class="rest_title">La palette du goût</h3>
+                                <p class="rest_footer">Ménilmontant</p>
+                            </div>
+                            <div class="like">
+                                <i class="far fa-heart default-icon"></i>
+                                <i class="fas fa-heart hover-icon"></i>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </a>
 
                 <!--LA NOTE ENCHANTEE-->
-                <article class="restaurantbox">
-                    <figure class="header_img">
-                        <img alt="La note enchantée" class="restaurant_img"
-                            src="images/restaurants/Charonne.jpg">
-                        <figcaption class="btn_nouveau">Nouveau</figcaption>
-                    </figure>
-                    <header class="restaubox_content">
-                        <hgroup>
-                            <h3><a href="la_note_enchantee.html" class="strong">La note enchantée</a></h3>
-                            <p class="footer">Charonne</p>
-                        </hgroup>
-                        <div class="like">
-                            <i class="far fa-heart default-icon"></i>
-                            <i class="fas fa-heart hover-icon"></i>
-                        </div>
-                    </header>
-                </article>
+                <div class="restaurantbox">
+                    <a href="la_note_enchantee.html">
+                        <figure class="carte">
+                            <img alt="La note enchantée" class="restaurant_img" src="images/restaurants/Charonnejpg">
+                            <div class="btn_nouveau">
+                                <p>Nouveau</p>
+                            </div>
+                            <figcaption>
+                                <div class="carte_info">
+                                    <h3 class="rest_title">La note enchantée</h3>
+                                    <p class="rest_footer">Charonne</p>
+                                </div>
+                                <div class="like">
+                                    <i class="far fa-heart default-icon"></i>
+                                    <i class="fas fa-heart hover-icon"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
 
-                <!--A LA FRANCAISE-->
-                <article class="restaurantbox">
-                    <figure class="header_img">
-                        <img alt="A la française" class="restaurant_img" src="images/restaurants/Cité_Rouge.jpg">
-                        <figcaption class="btn_nouveau">Nouveau</figcaption>
-                    </figure>
-                    <header class="restaubox_content">
-                        <hgroup>
-                            <h3><a href="a_la_francaise.html" class="strong">A la française</a></h3>
-                            <p class="footer">Cité Rouge</p>
-                        </hgroup>
-                        <div class="like">
-                            <i class="far fa-heart default-icon"></i>
-                            <i class="fas fa-heart hover-icon"></i>
-                        </div>
-                    </header>
-                </article>
+                    <!--A LA FRANCAISE-->
+                    <div class="restaurantbox">
+                        <a href="a_la_française.html">
+                            <figure class="carte">
+                                <img alt="A la française" class="restaurant_img"
+                                    src="images/restaurants/Cité_Rouge.jpg">
+                                <div class="btn_nouveau">
+                                    <p>Nouveau</p>
+                                </div>
+                                <figcaption>
+                                    <div class="carte_info">
+                                        <h3 class="rest_title">A la française</h3>
+                                        <p class="rest_footer">Cité Rouge</p>
+                                    </div>
+                                    <div class="like">
+                                        <i class="far fa-heart default-icon"></i>
+                                        <i class="fas fa-heart hover-icon"></i>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
 
-                <!--LE DELICE DES SENS-->
-                <article class="restaurantbox">
-                    <figure class="header_img">
-                        <img alt="Le délice des sens" class="restaurant_img"
-                            src="images/restaurants/Cité_Rouge.jpg">
-                        <figcaption class="btn_nouveau">Nouveau</figcaption>
-                    </figure>
-                    <header class="restaubox_content">
-                        <hgroup>
-                            <h3><a href="le_delice_des_sens.html" class="strong">Le délice des sens</a></h3>
-                            <p class="footer">Folie-Méricourt</p>
-                        </hgroup>
-                        <div class="like">
-                            <i class="far fa-heart default-icon"></i>
-                            <i class="fas fa-heart hover-icon"></i>
+                        <!--LE DELICE DES SENS-->
+                        <div class="restaurantbox">
+                            <a href="le_delice_des_sens.html">
+                                <figure class="carte">
+                                    <img alt="Le délice des sens" class="restaurant_img"
+                                        src="images/restaurants/Folie-Méricourt.jpg">
+                                    <div class="btn_nouveau">
+                                        <p>Nouveau</p>
+                                    </div>
+                                    <figcaption>
+                                        <div class="carte_info">
+                                            <h3 class="rest_title">Le délice des sens</h3>
+                                            <p class="rest_footer">Folie-Méricourt</p>
+                                        </div>
+                                        <div class="like">
+                                            <i class="far fa-heart default-icon"></i>
+                                            <i class="fas fa-heart hover-icon"></i>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </a>
                         </div>
-                    </header>
-                </article>
-            </div>
-        </section>
+
     </main>
 
     <footer>
@@ -157,7 +169,7 @@
             <div class="columnfooter">
                 <ul class="with_icon">
                     <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                    <li>><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                    <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
                 </ul>
                 <ul class="without_icon">
                     <li><a href="#">Mentions légales</a></li>
