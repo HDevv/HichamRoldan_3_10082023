@@ -3,9 +3,10 @@
   * {
     list-style: none;
     text-decoration: none;
+    font-family: 'roboto';
   }
 
-  h1, h2, h3, h4 {
+  h1 {
     font-family: 'shrikhand';
   }
 
@@ -20,12 +21,19 @@
     display: flex;
     flex-direction: column;  
   }
-  .logo {
+  .logo_header {
     width: 200px;
     display: flex;
     justify-content: center;
+    margin-left: 60px;
   }
 
+  .logo img {  /*new*/
+    max-width: 300px; }
+
+  img { /*new*/
+    width: 100%;
+  }
   .headerMenu {
     align-items: center;
     justify-content: center;
@@ -36,6 +44,9 @@
     display: flex;
     background-color: #fff;
   }
+  .CardHeader {
+    background-color: #fff;
+    margin-left: 30px; }
 
   .location_content { /*CORRIGE*/
     padding: 5px;
