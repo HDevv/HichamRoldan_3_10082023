@@ -15,6 +15,8 @@
 
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./scss/main.css">
+    <link rel="stylesheet" type="text/scss" href="./scss/Base/base.scss">
+    <link rel="stylesheet" type="text/scss" href="./scss/Layout/layout.scss">
     <title>La note enchantée</title>
 </head>
 
@@ -28,17 +30,18 @@
         <div class="logo">
             <img class="logo_header" src="images/logo/ohmyfood@2x.svg">
         </div>
-        <div class="cover_img">
-            <img alt="La note enchantée restaurant" src="images/restaurants/Charonne.jpg">
-        </div>
+        
     </header>
 
     <!--TITRE-->
     <main>
+        <section>
+        <div class="cover_img">
+            <img alt="La note enchantée restaurant" src="images/restaurants/Charonne.jpg">
+        </div>
         <div class="restaurant_title">
             <h1 class="shrikhand">La note enchantée</h1>
-            <div class="like">
-                <i class="far fa-heart default-icon"></i> <!--VIDE-->
+            <div class="like2">
                 <i class="fas fa-heart hover-icon"></i>  <!--REMPLI-->
             </div>
         </div>
@@ -46,24 +49,22 @@
         <section class="foodcards">
 
             <h4 class="restaurant_subtitle">ENTRÉES</h4>
-            <article class="cardmenu">
-                <hgroup>
+            <div class="cardmenu">
+                <div>
                     <h4 class="menu_title">Ravioles de foie gras</h4>
                     <p class="menu_txt">Accompagnés de leur créme à la truffe</p>
-                </hgroup>
+            </div>
                 <div class="prix">
                     <span>25€</span>
                 </div>
                 <div class="box_hover">
                     <i class="fas fa-check-circle"></i>
                 </div>
-            </article>
+            </div>
 
-            <article class="cardmenu">
-                <hgroup>
+            <article class="cardmenu">                
                     <h4 class="menu_title">Caviar osciètre</h4>
                     <p class="menu_txt">Sur blini à la farine de blé noir</p>
-                </hgroup>
                 <div class="prix">
                     <span>35€</span>
                 </div>
@@ -74,10 +75,10 @@
 
 
             <article class="cardmenu">
-                <hgroup>
+                <div>
                     <h4 class="menu_title">Foie gras de canard cuit entier</h4>
                     <p class="menu_txt">Confiture de figue et pain toasté</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>35€</span>
                 </div>
@@ -90,10 +91,10 @@
         <section class="foodcards">
             <h4 class="restaurant_subtitle">PLATS</h4>
             <article class="cardmenu">
-                <hgroup>
+                <div>
                     <h4 class="menu_title">Noix de coquilles Saint-Jacques</h4>
                     <p class="menu_txt">Sur lit de purée de celeri-rave</celeri-rave></p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>40€</span>
                 </div>
@@ -103,10 +104,10 @@
             </article>
 
             <article class="cardmenu">
-                <hgroup>
+                <div>
                     <h4 class="menu_title">Langoustine poêlée</h4>
                     <p class="menu_txt">Purée de patate douce</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>35€</span>
                 </div>
@@ -117,10 +118,10 @@
 
 
             <article class="cardmenu">
-                <hgroup>
+                <div>
                     <h4 class="menu_title">Mijoté de queue de boeuf</h4>
                     <p class="menu_txt">Et riz sauvage aux zests de citron</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>44€</span>
                 </div>
@@ -133,10 +134,10 @@
         <section class="foodcards">
             <h4 class="restaurant_subtitle">DESSERTS</h4>
             <article class="cardmenu">
-                <hgroup>
+                <div>
                     <h4 class="menu_title">Macarons noisette et chocolat</h4>
                     <p class="menu_txt">Glace au caramel brun et sel de Guérande</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>18€</span>
                 </div>
@@ -146,10 +147,10 @@
             </article>
 
             <article class="cardmenu">
-                <hgroup>
+                <div>
                     <h4 class="menu_title">Baba au rhum revisité</h4>
                     <p class="menu_txt">Avec son coulis de citron</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>22€</span>
                 </div>
@@ -160,10 +161,10 @@
 
 
             <article class="cardmenu">
-                <hgroup>
+                <div>
                     <h4 class="menu_title">Tarte au citron meringuée</h4>
                     <p class="menu_txt">Destructurée</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>23€</span>
                 </div>
@@ -173,9 +174,9 @@
             </article>
         </section>
 
-        <div class="btn_commander">
-            <button class="btn_menu" type="button">Commander</button>
-        </div>
+        
+            <button class="btn_commander" type="button">Commander</button>
+    </section>
     </main>
     <footer>
         <div class="footerfond">

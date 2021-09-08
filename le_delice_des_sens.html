@@ -15,55 +15,56 @@
 
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./scss/main.css">
+    <link rel="stylesheet" type="text/scss" href="./scss/Base/base.scss">
+    <link rel="stylesheet" type="text/scss" href="./scss/Layout/layout.scss">
     <title>Le délice des sens</title>
 </head>
 
 
 <body class="menu">
     <!--HEADER-->
-    <header>
+    <header class="CardHeader">
         <a href="index.html" class="back">
             <i class="fas fa-arrow-left"></i>
         </a>
         <div class="logo">
-            <img alt="logo" src="images/logo/ohmyfood@2x.svg">
+            <img class="logo_header" src="images/logo/ohmyfood@2x.svg">
         </div>
-        <figure class="cover_img">
-            <img alt="La palette du goût restaurant" src="images/restaurants/Cité_rouge.jpg">
-        </figure>
+        
     </header>
 
     <!--TITRE-->
     <main>
+        <section>
+        <div class="cover_img">
+            <img alt="Le délice des sens restaurant" src="images/restaurants/Cité_Rouge.jpg">
+        </div>
         <div class="restaurant_title">
             <h1 class="shrikhand">Le délice des sens</h1>
-            <div class="like">
-                <i class="far fa-heart default-icon"></i>
-                <i class="fas fa-heart hover-icon"></i>
+            <div class="like2">
+                <i class="fas fa-heart hover-icon"></i>  <!--REMPLI-->
             </div>
         </div>
 
         <section class="foodcards">
 
             <h4 class="restaurant_subtitle">ENTRÉES</h4>
-            <article class="cardmenu1">
-                <hgroup>
-                    <h4 class="menu_title">Tartare de thon</h4>
+            <div class="cardmenu">
+                <div>
+                    <h4 class="menu_title">Tartare au thon</h4>
                     <p class="menu_txt">Assaisonné au yuzu</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>25€</span>
                 </div>
                 <div class="box_hover">
                     <i class="fas fa-check-circle"></i>
                 </div>
-            </article>
+            </div>
 
-            <article class="cardmenu2">
-                <hgroup>
+            <article class="cardmenu">                
                     <h4 class="menu_title">Bouchée de homard croustillant</h4>
                     <p class="menu_txt">Et sa farandole de petits légumes</p>
-                </hgroup>
                 <div class="prix">
                     <span>35€</span>
                 </div>
@@ -73,11 +74,11 @@
             </article>
 
 
-            <article class="cardmenu3">
-                <hgroup>
+            <article class="cardmenu">
+                <div>
                     <h4 class="menu_title">Velouté de cèpes</h4>
                     <p class="menu_txt">Aux truffes</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>20€</span>
                 </div>
@@ -89,12 +90,11 @@
 
         <section class="foodcards">
             <h4 class="restaurant_subtitle">PLATS</h4>
-            <article class="cardmenu4">
-                <hgroup>
-                    <h4 class="menu_title">Poulet rôti aux herbes de<br>provence</br>
-                    </h4>
-                    <p class="menu_txt">Et sa crème de truffe</p>
-                </hgroup>
+            <article class="cardmenu">
+                <div>
+                    <h4 class="menu_title">Poulet rôti aux herbes de provence</h4>
+                    <p class="menu_txt">Et sa crème de truffes</celeri-rave></p>
+                </div>
                 <div class="prix">
                     <span>40€</span>
                 </div>
@@ -103,11 +103,11 @@
                 </div>
             </article>
 
-            <article class="cardmenu5">
-                <hgroup>
-                    <h4 class="menu_title">Langouste rôtie</h4>
+            <article class="cardmenu">
+                <div>
+                    <h4 class="menu_title">Langoustione rôtie</h4>
                     <p class="menu_txt">Et ses légumes de saison</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>35€</span>
                 </div>
@@ -117,11 +117,11 @@
             </article>
 
 
-            <article class="cardmenu6">
-                <hgroup>
+            <article class="cardmenu">
+                <div>
                     <h4 class="menu_title">Côte de boeuf angus</h4>
                     <p class="menu_txt">Et sa purée de panais</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>44€</span>
                 </div>
@@ -133,11 +133,11 @@
 
         <section class="foodcards">
             <h4 class="restaurant_subtitle">DESSERTS</h4>
-            <article class="cardmenu7">
-                <hgroup>
+            <article class="cardmenu">
+                <div>
                     <h4 class="menu_title">Farandole de desserts</h4>
                     <p class="menu_txt">Du chef</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>18€</span>
                 </div>
@@ -146,11 +146,11 @@
                 </div>
             </article>
 
-            <article class="cardmenu8">
-                <hgroup>
+            <article class="cardmenu">
+                <div>
                     <h4 class="menu_title">Crème brulée</h4>
                     <p class="menu_txt">Revisitée</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>22€</span>
                 </div>
@@ -160,11 +160,11 @@
             </article>
 
 
-            <article class="cardmenu9">
-                <hgroup>
+            <article class="cardmenu">
+                <div>
                     <h4 class="menu_title">Tiramitsu</h4>
                     <p class="menu_txt">A la noisette</p>
-                </hgroup>
+                </div>
                 <div class="prix">
                     <span>23€</span>
                 </div>
@@ -174,11 +174,9 @@
             </article>
         </section>
 
-        <aside class="full-width order fade-11">
-            <a class="show-btn button1" href="#">
-                Commander
-            </a>
-        </aside>
+        
+            <button class="btn_commander" type="button">Commander</button>
+    </section>
     </main>
     <footer>
         <div class="footerfond">
