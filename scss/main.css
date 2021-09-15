@@ -73,7 +73,7 @@
 
 /*FIN DU LOADER*/
 
-@media (min-width: 375px) and (max-width: 667px) {
+@media (min-width: 140px) and (max-width: 667px) {
   * {
     list-style: none;
     text-decoration: none;
@@ -843,7 +843,7 @@
 }
 /*------------------VERSION DESKTOP-----------------------*/
 
-@media (min-width: 1000px) and (max-width: 2559px) {
+@media (min-width: 655px) {
   body {
     width: 100%;
   }
@@ -1556,27 +1556,15 @@
     }  
   }
 
-  @media (min-width: 768px) and (max-width: 1439px) {
+  @media (min-width: 768px)  {
     .body {
       width: auto;
     }
   }
   
-  @media (min-width: 2560px) {
-    .body {
-      width: auto;
-    }
+ 
 
-  }
-
-  @media screen and (max-width: 1000px) {
-   .full-container {
-     display: flex;
-     flex-direction: column;
-   }
-  }
-
-  @media (min-width: 149px) and (max-width: 374px) {
+  @media (min-width: 149px) and (max-width: 767px) {
     .body {
       width: auto;
     }
