@@ -1,13 +1,13 @@
 /*LOADER*/
 
 .rotate-scale-up {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   font-family: "shrikhand";
   font-weight: bold;
 
   /*dégradé du texte du loader*/
-  background: linear-gradient(120deg,#ff79da 0%, #9356dc 100%);
+  background: black;
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16,16 +16,23 @@
   margin: auto;
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
+
+}
+.full_container > div { 
+  width: 100%;
+  height: 100%;
+  color: grey;
+  z-index: 2;
 }
 
 .rotate-scale-up {
   opacity: 1;
-  position: fixed;
   animation: loader 4s linear forwards;
   inset: 0px;
   background-color: white;
   display: grid;
   place-items: center;
+ 
 }
 
 .rotate-scale-up::before {
@@ -69,6 +76,7 @@
             transform: scale(1) rotateZ(360deg);
   }
 }
+
 
 
 /*FIN DU LOADER*/
@@ -384,34 +392,38 @@
     margin-top: 35px;
     margin-right: 5%;
   }
-  
-
-  .menu_title { /*titres des menus*/
+  .menu_title {/*titres des menus*/
     position: absolute;
-    top: -30%;
-    left: 5%;
-    font-size: 14px;
+    top: -10%;
+    left: 3%;
+    font-size: 16px;
     font-weight: bold;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     width: 80%;
+    font-size: medium;
+    font-weight: bold;
+
   }
-  .menu_txt {
+  .menu_txt {/*txt des menus*/
     position: absolute;
     top: 40%;
-    left: 5%;
-    font-size: 12px;
+    left: 3%;
+    font-size: 14px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     width: 80%;
   }
-  .prix {
+  .prix {/*prix des menus*/
     position: absolute;
-    right: 5px;
-    top: 5%;
+    right: 10px;
+    top: 60%;
+    font-weight: bold;
   }
+
+  /*animation verte des menus mobile*/
   .box_hover {
     display: flex;
     align-items: center;
@@ -424,6 +436,7 @@
     border-radius: 0 10px 10px 0;
     background-color: #99e2d0;
     top: 0;
+    bottom: 0;
     transform-origin: right 50%;
     transition: rotate 0.5s;
     right: -49px;
@@ -568,46 +581,20 @@
     filter: brightness(1.15);
   }
 
-  .cardmenu {
+  .cardmenu { /*box des menus*/
     position: relative;
     margin: 15px;
     background-color: #fff;
     box-shadow: 0 0 10px #a3a3a373;
-    border-radius: 10px;
-    padding: 25px;
+    border-radius: 17px;
+    padding: 35px;
     cursor: pointer;
-    max-width: 78%;
+    max-width: 80%;
     z-index: 1;
-    margin: auto;
     margin-bottom: 10px;
     overflow: hidden;
   }
-  .menu_title {
-    position: absolute;
-    top: -30%;
-    left: 5%;
-    font-size: 14px;
-    font-weight: bold;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 80%;
-  }
-  .menu_txt {
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    font-size: 12px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 80%;
-  }
-  .prix {
-    position: absolute;
-    right: 5px;
-    top: 5%;
-  }
+ 
   .box_hover {
     display: flex;
     align-items: center;
@@ -1210,56 +1197,95 @@
     /*déroulement animation*/
     animation-fill-mode: both;
   }
+  
+/*--ANIMATION APPARITION DES MENUS--*/
 
-  @keyframes delayapparition {
-    0% {
-      opacity: 0;
-      transform: translate(100%, 0);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0, 0);
-    }
-  }
-  .delay__0 {
-    animation-delay: 0s;
+
+  .foodcards .cardmenu {
+    opacity: 0;
+    animation: transition-delayed 0.5s forwards;
   }
 
-  .delay__1 {
+  .foodcards .cardmenu:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .foodcards .cardmenu:nth-child(2) {
     animation-delay: 0.4s;
   }
 
-  .delay__2 {
+  .foodcards .cardmenu:nth-child(3) {
     animation-delay: 0.8s;
   }
 
-  .delay__3 {
+  .foodcards .cardmenu:nth-child(4) {
     animation-delay: 1.2s;
   }
 
-  .delay__4 {
+  .foodcards .cardmenu:nth-child(5) {
     animation-delay: 1.6s;
   }
 
-  .delay__5 {
+  .foodcards .cardmenu:nth-child(6) {
     animation-delay: 2s;
   }
 
-  .delay__6 {
+  .foodcards .cardmenu:nth-child(7) {
     animation-delay: 2.4s;
   }
 
-  .delay__7 {
-    animation-delay: 2.6s;
-  }
-
-  .delay__8 {
+  .foodcards .cardmenu:nth-child(8) {
     animation-delay: 2.8s;
   }
 
-  .delay__9 {
+  .foodcards .cardmenu:nth-child(9) {
     animation-delay: 3.2s;
   }
+
+  @keyframes transition-delayed {
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .carte {
+    /*restaurants de l'acceuil*/
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px #a3a3a373;
+    padding-bottom: 10px;
+    transition: transform 400ms;
+  }
+  .carte:hover {
+    transform: scale(1.01);
+  }
+  .carte img {
+    border-radius: 20px 20px 0 0;
+    height: 225px;
+    width: 335px;
+    object-fit: cover;
+  }
+  .carte figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .carte figcaption h3 {
+    font-size: 16px;
+    margin: 5px;
+    margin-left: 10px;
+  }
+  .carte figcaption p {
+    font-size: 14px;
+    margin: 5px;
+    margin-left: 10px;
+  }
+  .carte figcaption .like {
+    font-size: 25px;
+    margin-right: 5%;
+  }
+
 
   main section .foodcards {
     display: flex;
@@ -1489,6 +1515,7 @@
     background-color: #353535;
     color: white;
     padding: 10px;
+    text-align: center;
   }
 
   footer {
