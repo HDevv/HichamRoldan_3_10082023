@@ -96,7 +96,7 @@
     font-family: "roboto", sans-serif;
   }
 
-  
+
   body {
     /*new*/
     width: 100%;
@@ -485,6 +485,7 @@
   }
 
   .fa-heart:hover::before {
+    font-weight: bold;
     animation: progress-heart 0.8s ease;
     background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
     background-size: auto;
@@ -1363,19 +1364,7 @@
   .prix {
     font-size: 0.8em;
   }
-  .restaurantsubtitle {
-    /*titre ENTREES PLATS DESSERTS*/
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 200;
-    color: #7e7e7e;
-    padding-bottom: 20px;
-    padding-left: 13px;
-  }
-  .restaurantsubtitle {
-    padding-bottom: 5px;
-    border-bottom: 3px solid #99e2d0;
-  }
+  
 
   
   /*--------------CHOIX DES RESTAURANTS DANS L'ACCEUIL----------*/
@@ -1585,13 +1574,20 @@
     }  
   }
 
-  @media (min-width: 768px)  {
+/*------------ VERSION TABLETTE / IPAD ---------------*/
+
+  @media (min-width: 768px) and (max-width: 1024px) {
     .body {
-      width: auto;
+      width: 100%;
     }
+    .fa-heart::before {
+      display: none;
+    }
+    .etape_text {
+      align-items: center;
+    }
+
   }
-  
- 
 
   @media (min-width: 149px) and (max-width: 767px) {
     .body {
