@@ -1,67 +1,52 @@
 /*LOADER*/
 
+
+.full-conainer {
+  position: fixed;
+}
+
 .rotate-scale-up {
+  /*taille et police du loader*/
   width: 100%;
   height: 100%;
   font-family: "shrikhand";
-  font-weight: bold;
-
-  /*dégradé du texte du loader*/
-  background: black;
-  background-clip: border-box;
+  font-size: 40px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   /*Placement du loader au milieu de la page*/
   margin: auto;
-  position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-
 }
-.full_container > div { 
+
+.loader { 
   width: 100%;
   height: 100%;
-  color: grey;
-  z-index: 2;
-}
-
-.rotate-scale-up {
   opacity: 1;
-  animation: loader 4s linear forwards;
+  background-color: grey; /*4*/
+  z-index: 9999;
+  position: fixed; /*2*/
+}
+
+.loader .rotate-scale-up {
+  opacity: 1;
+  animation: rotate-scale-up 4s linear forwards;
   inset: 0px;
-  background-color: white;
-  display: grid;
+  background-color: #B539C0;
+  
+  display: grid; /*place le txt sur le background gris*/
+  
   place-items: center;
- 
 }
-
-.rotate-scale-up::before {
-  animation: loader-spinner 3s cubic-bezier(0.76, 0.19, 0.43, 1.09) forwards;
-  content: "";
-  position: absolute;
-}
-
+  
 
 /*webkit permet à tous les navigateurs de lire le code*/
-.rotate-scale-up {
+.loader {
 	-webkit-animation: rotate-scale-up 1.5s linear 0.25s 4 alternate ;
 	        animation: rotate-scale-up 1.5s linear 0.25s 4 alternate ;
 }
 
-@-webkit-keyframes rotate-scale-up {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
-  }
-  50% {
-    -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
-  }
-}
+
 @keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
