@@ -1037,18 +1037,10 @@
     margin-left: -25px;
   }
 
+  
   .like .fa-heart {
     padding: 0.2em;
     width: 50%;
-  }
-
-  /* animation des coeurs en remplissage progressive*/
-  .fa-heart::before {
-    content: "";
-    position: absolute;
-    right: -650px;
-    top: 250px;
-    
   }
 
   .fa-heart:hover::before {
