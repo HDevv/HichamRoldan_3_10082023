@@ -1,6 +1,5 @@
 /*LOADER*/
 
-
 .full-conainer {
   position: fixed;
 }
@@ -16,7 +15,10 @@
 
   /*Placement du loader au milieu de la page*/
   margin: auto;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .loader {
@@ -26,20 +28,19 @@
   background-color: white;
   z-index: 9999;
   position: fixed;
-  animation:  loader 1s ease-in-out 3s 1 normal forwards;
-  -webkit-animation:  loader 1s ease-in-out 3s 1 normal forwards;
+  animation: loader 1s ease-in-out 3s 1 normal forwards;
+  -webkit-animation: loader 1s ease-in-out 3s 1 normal forwards;
 }
 
 .rotate-scale-up {
   opacity: 1;
   animation: rotate-scale-up 4s linear forwards;
   inset: 0px;
-  background-color: #B539C0;
-  
+  background-color: #b539c0;
+
   display: grid; /*place le txt sur le background gris*/
   place-items: center;
 }
-  
 
 @keyframes loader {
   0% {
@@ -48,33 +49,30 @@
   99% {
     opacity: 0;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   100% {
     -webkit-transform: scale(0);
-            transform: scale(0);
-            opacity: 0;
-}
+    transform: scale(0);
+    opacity: 0;
+  }
 }
 /*webkit permet à tous les navigateurs de lire le code*/
-
 
 @keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
   50% {
     -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
-
-
 
 /*FIN DU LOADER*/
 
@@ -92,7 +90,6 @@
   p {
     font-family: "roboto", sans-serif;
   }
-
 
   body {
     /*new*/
@@ -130,15 +127,15 @@
     display: flex;
     background-color: #fff;
   }
-  .CardHeader { /*-------MENUS--------*/
+  .CardHeader {
+    /*-------MENUS--------*/
     background-color: #fff;
     margin-left: 30px;
   }
 
+  /*LOCALISATION ACCEUIL*/
 
-    /*LOCALISATION ACCEUIL*/
-
-  .location_content { 
+  .location_content {
     padding: 5px;
     width: 50%;
     margin-top: 7px;
@@ -173,7 +170,8 @@
     left: 0;
   }
 
-  .back { /*Flèche retour des menus*/
+  .back {
+    /*Flèche retour des menus*/
     position: absolute;
     left: 5%;
     top: 4%;
@@ -194,7 +192,7 @@
   }
   /*-------------------PARTIE FONCTIONNEMENT ACCEUIL------------------*/
   .fondgrisexplore {
-    background-color: #f5f5f5ec; 
+    background-color: #f5f5f5ec;
     padding: 20px;
     padding-bottom: 40px;
     position: relative;
@@ -267,7 +265,7 @@
     z-index: 1;
     font-size: 15px;
   }
-  
+
   /*--------------PARTIE RESTAURANTS---------------*/
 
   .fondgrisrestaurants {
@@ -276,7 +274,8 @@
     padding-bottom: 10px;
   }
 
-  .rest_title { /*titres des restaurants de l'acceuil*/
+  .rest_title {
+    /*titres des restaurants de l'acceuil*/
     margin: 20px;
     padding-top: 60px;
     font-weight: bold;
@@ -385,13 +384,15 @@
     font-family: shrikhand;
   }
 
-  .like2 {      /*Like des menus version mobile*/
+  .like2 {
+    /*Like des menus version mobile*/
     right: 10%;
     font-size: 25px;
     margin-top: 35px;
     margin-right: 5%;
   }
-  .menu_title {/*titres des menus*/
+  .menu_title {
+    /*titres des menus*/
     position: absolute;
     top: -10%;
     left: 3%;
@@ -403,9 +404,9 @@
     width: 80%;
     font-size: medium;
     font-weight: bold;
-
   }
-  .menu_txt {/*txt des menus*/
+  .menu_txt {
+    /*txt des menus*/
     position: absolute;
     top: 40%;
     left: 3%;
@@ -415,7 +416,8 @@
     white-space: nowrap;
     width: 80%;
   }
-  .prix {/*prix des menus*/
+  .prix {
+    /*prix des menus*/
     position: absolute;
     right: 10px;
     top: 60%;
@@ -462,17 +464,19 @@
   }
   @keyframes rotate {
     from {
-      transform: rotate(0deg); }
+      transform: rotate(0deg);
+    }
     to {
-      transform: rotate(360deg); } }
+      transform: rotate(360deg);
+    }
+  }
 
   /*----------------------------------*/
 
-  
-   /* animation des coeurs en remplissage progressive*/
-   
-   
-   .fa-heart::before {/*coeur blanc avec contour, puis remplissage dégradé*/
+  /* animation des coeurs en remplissage progressive*/
+
+  .fa-heart::before {
+    /*coeur blanc avec contour, puis remplissage dégradé*/
     content: "";
     position: absolute;
     color: transparent;
@@ -493,7 +497,7 @@
     -webkit-background-clip: text;
     /*rognage au text */
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0px;   
+    -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: transparent;
   }
 
@@ -504,9 +508,8 @@
     margin-left: 20%;
     margin-top: -15px;
     position: relative;
-
   }
-  .like { 
+  .like {
     display: inline-flex;
     margin-left: 5%;
     vertical-align: middle;
@@ -529,8 +532,8 @@
   .main {
     position: relative;
   }
- /*----------BOUTON COMMANDER-----------*/
- 
+  /*----------BOUTON COMMANDER-----------*/
+
   .btn_commander {
     font-weight: bold;
     font-size: 14px;
@@ -571,7 +574,8 @@
     filter: brightness(1.15);
   }
 
-  .cardmenu { /*box des menus*/
+  .cardmenu {
+    /*box des menus*/
     position: relative;
     margin: 15px;
     background-color: #fff;
@@ -584,7 +588,7 @@
     margin-bottom: 10px;
     overflow: hidden;
   }
- 
+
   .box_hover {
     display: flex;
     align-items: center;
@@ -622,9 +626,8 @@
     transition-delay: 150ms;
   }
 
-
   /*CHOIX DES MENUS ET ANIMATION D'APPARITION*/
-  
+
   .foodcards .cardmenu {
     opacity: 0;
     animation: transition-delayed 0.5s forwards;
@@ -710,7 +713,6 @@
     margin-right: 5%;
   }
 
-  
   .btn_nouveau {
     position: absolute;
     right: 5px;
@@ -727,7 +729,8 @@
     position: relative;
   }
 
-  .cover_img {  /*images des restaurants*/
+  .cover_img {
+    /*images des restaurants*/
     height: 217px;
   }
   .cover_img img {
@@ -852,7 +855,8 @@
 
   /*HEADER- LOGO ET LOCALISATION*/
 
-  .location_content {     /*LOCALISATION*/
+  .location_content {
+    /*LOCALISATION*/
     margin-left: 45%;
     display: flex;
     align-items: row;
@@ -861,11 +865,12 @@
     font-size: 20px;
   }
 
-    .fas fa-map-marker {
-      /*icone de localisation*/
+  .fas fa-map-marker {
+    /*icone de localisation*/
     left: 43%;
-    }
-  header img { /*LOGO*/
+  }
+  header img {
+    /*LOGO*/
     margin-left: 35%;
     width: 30%;
   }
@@ -887,9 +892,8 @@
     font-size: 1.4em;
   }
 
+  /*------------PARTIE RESEERVATION / EXPLORER-------------*/
 
-    /*------------PARTIE RESEERVATION / EXPLORER-------------*/
-    
   .fondgrisexplore {
     text-align: center;
     background-color: #f6f6f6;
@@ -921,7 +925,6 @@
     box-shadow: 0px 3px 4px 2px #b7b7b7;
     /* durcissement ombre*/
   }
-
 
   /*-------PARTIE FONCTIONNEMENT ACCEUIL-------*/
 
@@ -989,10 +992,7 @@
     color: #9356dc;
   }
 
-
-
-   /*--------------PARTIE RESTAURANTS----------------*/
-
+  /*--------------PARTIE RESTAURANTS----------------*/
 
   /*ANIMATION DES MENUS*/
 
@@ -1007,7 +1007,7 @@
     margin-top: -15px;
     position: relative;
   }
-  
+
   .like {
     margin-right: 28%;
     margin-top: 2px;
@@ -1019,13 +1019,13 @@
     margin-left: -25px;
   }
 
-  
   .like .fa-heart {
     padding: 0.2em;
     width: 50%;
   }
 
-  .fa-heart::before { /*coeur blanc avec contour, puis remplissage dégradé*/
+  .fa-heart::before {
+    /*coeur blanc avec contour, puis remplissage dégradé*/
     content: "";
     position: absolute;
     color: transparent;
@@ -1045,7 +1045,7 @@
     -webkit-background-clip: text;
     /*rognage au text */
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0px;   
+    -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: transparent;
   }
 
@@ -1066,7 +1066,7 @@
 
   /*taille du coeur*/
   .like2 .fa-heart {
-    font-size: 1.5em; 
+    font-size: 1.5em;
     opacity: transparent;
   }
   .like2 {
@@ -1079,7 +1079,7 @@
     right: 110px;
     top: 340px;
   }
-  
+
   /*----------------CHOIX MENUS-----------*/
   .cardmenu {
     position: relative;
@@ -1119,7 +1119,8 @@
     top: 30%;
     size: 5em;
   }
-  .box_hover {   /*animation verte des menus*/
+  .box_hover {
+    /*animation verte des menus*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1159,10 +1160,12 @@
 
   @keyframes rotate {
     from {
-      transform: rotate(0deg); }
+      transform: rotate(0deg);
+    }
     to {
-      transform: rotate(360deg); } }
-
+      transform: rotate(360deg);
+    }
+  }
 
   /*apparition des menu */
   .cardmenu {
@@ -1181,9 +1184,8 @@
     /*déroulement animation*/
     animation-fill-mode: both;
   }
-  
-/*--ANIMATION APPARITION DES MENUS--*/
 
+  /*--ANIMATION APPARITION DES MENUS--*/
 
   .foodcards .cardmenu {
     opacity: 0;
@@ -1270,7 +1272,6 @@
     margin-right: 5%;
   }
 
-
   main section .foodcards {
     display: flex;
     flex-direction: row;
@@ -1345,9 +1346,7 @@
   .prix {
     font-size: 0.8em;
   }
-  
 
-  
   /*--------------CHOIX DES RESTAURANTS DANS L'ACCEUIL----------*/
 
   .fondgrisrestaurants {
@@ -1479,9 +1478,7 @@
     position: relative;
   }
 
-
   /*--------------------FOOTER-----------------*/
-
 
   footer {
     background-color: #353535;
@@ -1532,7 +1529,8 @@
     margin-right: 23px;
   }
 
-  .footer_logo img {/*Logo du footer*/
+  .footer_logo img {
+    /*Logo du footer*/
     width: 50%;
     color: white;
   }
@@ -1550,47 +1548,44 @@
   }
 }
 
-  @media (min-width: 1024px) and (max-width: 1279px) {
-    .body {
-      width: auto;
-    }  
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .body {
+    width: auto;
   }
+}
 
 /*------------ VERSION TABLETTE / IPAD ---------------*/
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .body {
-      width: 100%;
-    }
-    .fa-heart::before {
-      display: none;
-    }
-    .etape_text {
-      align-items: center;
-    }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .body {
+    width: 100%;
   }
-
-  @media (min-width: 149px) and (max-width: 767px) {
-    .body {
-      width: auto;
-    }
-   }
-  
-  footer {
-    background-color: #353535;
-    color: white;
-    padding: 10px;
+  .fa-heart::before {
+    display: none;
   }
-
-  footer {
-    font-size: 1.2em;
-    display: flex;
+  .etape_text {
+    align-items: center;
   }
+}
 
-  .column_footer {
-    display: flex;
-    margin-left: 49px;
+@media (min-width: 149px) and (max-width: 767px) {
+  .body {
+    width: auto;
   }
+}
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 10px;
+}
 
+footer {
+  font-size: 1.2em;
+  display: flex;
+}
+
+.column_footer {
+  display: flex;
+  margin-left: 49px;
+}
