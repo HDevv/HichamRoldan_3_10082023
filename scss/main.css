@@ -324,11 +324,6 @@
     margin-right: 5%;
   }
 
-  .like {
-    /*new*/
-    margin: 5px;
-    margin-right: auto;
-  }
   .btn_nouveau {
     position: absolute;
     right: 5px;
@@ -353,36 +348,6 @@
     object-fit: cover;
   }
 
-  .restaurant_title {
-    display: flex;
-    position: relative;
-    bottom: 49px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 50px 50px 0 0;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  .restaurant_subtitle {
-    display: flex;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    align-items: center;
-    margin-left: 15px;
-    font-weight: normal;
-    border-bottom: solid 2px #99e2d0;
-    max-width: 40px;
-  }
-
-  .shrikhand {
-    font-size: 25px;
-    position: relative;
-    left: 5%;
-    top: 20px;
-    font-family: shrikhand;
-  }
 
   .like2 {
     /*Like des menus version mobile*/
@@ -471,7 +436,6 @@
     }
   }
 
-  /*----------------------------------*/
 
   /* animation des coeurs en remplissage progressive*/
 
@@ -501,6 +465,7 @@
     -webkit-text-stroke-color: transparent;
   }
 
+/*Like des menus version mobile*/
   .like2 {
     display: inline-flex;
     margin-left: 15%;
@@ -508,8 +473,15 @@
     margin-left: 20%;
     margin-top: -15px;
     position: relative;
-  }
-  .like {
+      
+    right: 10%;
+    font-size: 25px;
+    margin-top: 35px;
+    margin-right: 5%;
+    }
+
+/*like index mobile*/
+  .like { 
     display: inline-flex;
     margin-left: 5%;
     vertical-align: middle;
@@ -536,7 +508,7 @@
 
   .btn_commander {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
     color: white;
     background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
     box-shadow: 0 0 16px #0f0f0f5b;
@@ -545,9 +517,8 @@
     cursor: pointer;
     transition: filter 300ms;
     transition: box-shadow 250ms;
-  }
 
-  .btn_commander {
+/*positionnement*/
     margin-left: 100px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -759,20 +730,13 @@
     max-width: 40px;
   }
 
-  .shrikhand {
+/*titre du menu sous restaurant title*/
+  .shrikhand { 
     font-size: 25px;
     position: relative;
     left: 5%;
     top: 20px;
     font-family: shrikhand;
-  }
-
-  .like2 {
-    /*Like des menus version mobile*/
-    right: 10%;
-    font-size: 25px;
-    margin-top: 35px;
-    margin-right: 5%;
   }
 
   /*-------------------FOOTER------------------*/
@@ -923,7 +887,6 @@
     );
     /*éclaircissement couleur*/
     box-shadow: 0px 3px 4px 2px #b7b7b7;
-    /* durcissement ombre*/
   }
 
   /*-------PARTIE FONCTIONNEMENT ACCEUIL-------*/
@@ -953,13 +916,11 @@
     margin-bottom: 20px;
     list-style-type: none;
     counter-increment: repas;
-  }
-  .etape {
     flex: 1;
     margin: 0 2em 0 1rem;
     position: relative;
   }
-
+  
   .etape_number {
     padding-right: 10px;
     font-size: 0px;
@@ -988,9 +949,7 @@
     background-color: #f2eafb;
     box-shadow: 2px 4px 8px 0px #d1d1d1;
   }
-  .etape:hover .etape_number {
-    color: #9356dc;
-  }
+  
 
   /*--------------PARTIE RESTAURANTS----------------*/
 
@@ -1002,24 +961,11 @@
     margin-left: 15%;
     vertical-align: middle;
     margin-left: 20%;
-  }
-  .like2 {
     margin-top: -15px;
     position: relative;
   }
 
-  .like {
-    margin-right: 28%;
-    margin-top: 2px;
-  }
-  .like i {
-    position: relative;
-  }
-  .like i {
-    margin-left: -25px;
-  }
-
-  .like .fa-heart {
+  .like .fa-heart { /*positionnement des coeurs index*/
     padding: 0.2em;
     width: 50%;
   }
@@ -1126,7 +1072,6 @@
     justify-content: center;
     position: absolute;
     z-index: 1;
-    color: #fff;
     font-size: 20px;
     padding: 15px;
     border-radius: 0 10px 10px 0;
@@ -1152,10 +1097,11 @@
     transition: ease-in-out 0.5s;
     transform: translate(-49px);
   }
-  .cardmenu:hover i {
+  .cardmenu:hover i { /*icone de l'animation*/
     animation: rotate 0.6s;
     animation-timing-function: ease-in-out;
     transition-delay: 150ms;
+    color: #fff;
   }
 
   @keyframes rotate {
@@ -1167,7 +1113,7 @@
     }
   }
 
-  /*apparition des menu */
+/*--ANIMATION APPARITION DES MENUS--*/
   .cardmenu {
     display: flex;
     width: 93%;
@@ -1176,16 +1122,12 @@
     overflow: hidden;
     /*cache  ce qui dépasse */
     cursor: pointer;
-  }
-
-  .cardmenu- {
+    
     animation: delayapparition 0.6s;
     animation-timing-function: ease-in-out;
     /*déroulement animation*/
     animation-fill-mode: both;
   }
-
-  /*--ANIMATION APPARITION DES MENUS--*/
 
   .foodcards .cardmenu {
     opacity: 0;
@@ -1286,8 +1228,10 @@
   }
 
   .foodcards {
+   /*Blocs ENTREES PLATS DESSERTS*/ 
     width: 30%;
     margin: auto;
+    padding-bottom: 15px;
   }
   .foodcards h2 {
     text-align: center;
@@ -1331,11 +1275,6 @@
     margin-top: 0;
   }
 
-  .foodcards {
-    /*Blocs ENTREES PLATS DESSERTS*/
-    padding-bottom: 15px;
-  }
-
   .foodcards .cardmenu {
     background-color: rgba(255, 255, 255, 0.952);
     margin-bottom: 15px;
@@ -1353,72 +1292,48 @@
     background-color: #f6f6f6;
     padding-top: 10px;
     padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .restaurantbox {
     width: 100%;
   }
 
-  .btn_nouveau {
-    width: 50%;
-    border-radius: 5px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-
-  .fondgrisrestaurants {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
   /*img des menus dans l'acceuil*/
-  .carte img {
-    background-color: white;
-    border-radius: 15px;
-    margin: 10px;
-    padding-bottom: 10px;
-    height: 250px;
-    box-shadow: 0px 4px 5px 0px #cbcbcb;
-  }
-
   .carte img {
     flex-direction: row;
     margin: auto auto 40px auto;
     width: 21%;
     height: 267px;
     margin-bottom: 0px;
-  }
-
-  .carte img {
     object-fit: cover;
     height: 180px;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     position: relative;
   }
+  
+  /*pastille verte 'nouveau'*/
+  .btn_nouveau { 
 
-  .carte img {
-    object-fit: cover;
-    height: 201px;
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
-    position: relative;
-  }
-
-  .btn_nouveau {
-    position: absolute;
+    /*positionnement*/
+    width: 97%;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    
     z-index: 1;
-    right: 10px;
-    top: 10px;
+    
     background-color: #99e2d0;
-    color: #2c9c81;
-    border: 0;
-    padding: 5px 10px;
-    font-weight: 600;
-  }
 
-  .btn_nouveau {
+    /*texte*/
+    color: #fff;
+    font-weight: 600;
     font-size: 1.4em;
+    text-align: center;
+    opacity: 0.6;
   }
 
   .restaurant .text {
@@ -1485,29 +1400,22 @@
     color: white;
     padding: 10px;
     text-align: center;
-  }
-
-  footer {
     font-size: 1.2em;
     display: flex;
+    display: flex;
+    justify-content: center;
   }
 
   .column_footer {
     display: flex;
     margin-left: 49px;
-  }
-
-  .column_footer li {
-    margin-left: 144px;
-  }
-
-  .column_footer {
     list-style: none;
     margin-left: 6px;
     padding-left: 0;
   }
 
   .column_footer li {
+    margin-left: 144px;
     margin-bottom: 10px;
   }
 
@@ -1534,10 +1442,7 @@
     width: 50%;
     color: white;
   }
-  footer {
-    display: flex;
-    justify-content: center;
-  }
+  
   footer ul {
     display: flex;
     justify-content: space-between;
@@ -1572,15 +1477,17 @@
   .body {
     width: auto;
   }
+
+  .carte img {
+    width: 100%;
+  }
 }
+
 
 footer {
   background-color: #353535;
   color: white;
   padding: 10px;
-}
-
-footer {
   font-size: 1.2em;
   display: flex;
 }
