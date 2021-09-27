@@ -86,7 +86,9 @@
   h1 {
     font-family: "shrikhand";
   }
-
+  a {
+    color: #2b2b2b
+  };
   p {
     font-family: "roboto", sans-serif;
   }
