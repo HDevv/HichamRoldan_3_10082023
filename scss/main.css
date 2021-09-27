@@ -102,11 +102,10 @@
 
   /*----------------HEADER-------------*/
 
-  .logo_header {
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    margin-left: 60px;
+  .header_title {
+    align-items: center;
+    font-weight: bold;
+    font-size: 45px;
   }
 
   .logo img {
