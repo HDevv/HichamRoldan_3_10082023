@@ -92,10 +92,12 @@
   }
 
   body {
-    /*new*/
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+  main {
+    width: 100%;
   }
 
   /*----------------HEADER-------------*/
@@ -128,7 +130,6 @@
     background-color: #fff;
   }
   .CardHeader {
-    /*-------MENUS--------*/
     background-color: #fff;
     margin-left: 30px;
   }
@@ -173,8 +174,8 @@
   .back {
     /*Flèche retour des menus*/
     position: absolute;
-    left: 5%;
-    top: 4%;
+    margin-top: 10px;
+    left: 20px;
   }
 
   .headerMenu_logo {
@@ -298,37 +299,8 @@
   .carte:hover {
     transform: scale(1.01);
   }
-  .carte img {
-    border-radius: 20px 20px 0 0;
-    height: 225px;
-    width: 335px;
-    object-fit: cover;
-  }
-  .carte figcaption {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .carte figcaption h3 {
-    font-size: 16px;
-    margin: 5px;
-    margin-left: 10px;
-  }
-  .carte figcaption p {
-    font-size: 14px;
-    margin: 5px;
-    margin-left: 10px;
-  }
-  .carte figcaption .like {
-    font-size: 25px;
-    margin-right: 5%;
-  }
 
-  .btn_nouveau {
-    position: absolute;
-    right: 5px;
-    top: 5px;
-  }
+  
   .btn_nouveau p {
     background-color: #99e2d0;
     color: #1c9965;
@@ -347,7 +319,6 @@
     height: 217px;
     object-fit: cover;
   }
-
 
   .like2 {
     /*Like des menus version mobile*/
@@ -436,7 +407,6 @@
     }
   }
 
-
   /* animation des coeurs en remplissage progressive*/
 
   .fa-heart::before {
@@ -465,7 +435,7 @@
     -webkit-text-stroke-color: transparent;
   }
 
-/*Like des menus version mobile*/
+  /*Like des menus version mobile*/
   .like2 {
     display: inline-flex;
     margin-left: 15%;
@@ -473,15 +443,15 @@
     margin-left: 20%;
     margin-top: -15px;
     position: relative;
-      
+
     right: 10%;
     font-size: 25px;
     margin-top: 35px;
     margin-right: 5%;
-    }
+  }
 
-/*like index mobile*/
-  .like { 
+  /*like index mobile*/
+  .like {
     display: inline-flex;
     margin-left: 5%;
     vertical-align: middle;
@@ -518,7 +488,7 @@
     transition: filter 300ms;
     transition: box-shadow 250ms;
 
-/*positionnement*/
+    /*positionnement*/
     margin-left: 100px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -647,20 +617,22 @@
   }
 
   .carte {
-    /*restaurants de l'acceuil*/
+    /*BOX restaurants de l'acceuil*/
     background-color: #fff;
     border-radius: 20px;
     margin: 20px;
     box-shadow: 0 0 10px #a3a3a373;
     padding-bottom: 10px;
     transition: transform 400ms;
+    position: relative;
+    height: 270px;
   }
   .carte:hover {
     transform: scale(1.01);
   }
   .carte img {
     border-radius: 20px 20px 0 0;
-    height: 225px;
+    height: 200px;
     width: 335px;
     object-fit: cover;
   }
@@ -668,6 +640,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 25px;
   }
   .carte figcaption h3 {
     font-size: 16px;
@@ -696,9 +669,6 @@
     border-radius: 5px;
   }
 
-  .carte {
-    position: relative;
-  }
 
   .cover_img {
     /*images des restaurants*/
@@ -719,19 +689,14 @@
     border-radius: 50px 50px 0 0;
   }
 
-  .restaurantsubtitle {
-    display: flex;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    align-items: center;
-    margin-left: 15px;
-    font-weight: normal;
+  .restaurant_subtitle {
     border-bottom: solid 2px #99e2d0;
     max-width: 40px;
+    margin-left: 20px;
   }
 
-/*titre du menu sous restaurant title*/
-  .shrikhand { 
+  /*titre du menu sous restaurant title*/
+  .shrikhand {
     font-size: 25px;
     position: relative;
     left: 5%;
@@ -768,14 +733,24 @@
     color: white;
     margin-top: 10px;
   }
-  .with_icon,
-  .without_icon {
+  .with_icon {
     padding-left: 0%;
   }
 
-  .with_icon a,
-  .without_icon a {
+  .with_icon a {   /*texte du footer mobile*/
     color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+
+  /*icones du footer*/
+  footer .fa-utensils {
+    margin-right: 5px;
+  }
+  footer .fa-hands-helping {
+    margin-right: 5px;
   }
 }
 /*------------------VERSION DESKTOP-----------------------*/
@@ -920,7 +895,7 @@
     margin: 0 2em 0 1rem;
     position: relative;
   }
-  
+
   .etape_number {
     padding-right: 10px;
     font-size: 0px;
@@ -949,7 +924,6 @@
     background-color: #f2eafb;
     box-shadow: 2px 4px 8px 0px #d1d1d1;
   }
-  
 
   /*--------------PARTIE RESTAURANTS----------------*/
 
@@ -965,7 +939,8 @@
     position: relative;
   }
 
-  .like .fa-heart { /*positionnement des coeurs index*/
+  .like .fa-heart {
+    /*positionnement des coeurs index*/
     padding: 0.2em;
     width: 50%;
   }
@@ -1097,7 +1072,8 @@
     transition: ease-in-out 0.5s;
     transform: translate(-49px);
   }
-  .cardmenu:hover i { /*icone de l'animation*/
+  .cardmenu:hover i {
+    /*icone de l'animation*/
     animation: rotate 0.6s;
     animation-timing-function: ease-in-out;
     transition-delay: 150ms;
@@ -1113,7 +1089,7 @@
     }
   }
 
-/*--ANIMATION APPARITION DES MENUS--*/
+  /*--ANIMATION APPARITION DES MENUS--*/
   .cardmenu {
     display: flex;
     width: 93%;
@@ -1122,7 +1098,7 @@
     overflow: hidden;
     /*cache  ce qui dépasse */
     cursor: pointer;
-    
+
     animation: delayapparition 0.6s;
     animation-timing-function: ease-in-out;
     /*déroulement animation*/
@@ -1228,7 +1204,7 @@
   }
 
   .foodcards {
-   /*Blocs ENTREES PLATS DESSERTS*/ 
+    /*Blocs ENTREES PLATS DESSERTS*/
     width: 30%;
     margin: auto;
     padding-bottom: 15px;
@@ -1314,18 +1290,17 @@
     border-radius: 15px 15px 0px 0px;
     position: relative;
   }
-  
-  /*pastille verte 'nouveau'*/
-  .btn_nouveau { 
 
+  /*pastille verte 'nouveau'*/
+  .btn_nouveau {
     /*positionnement*/
     width: 97%;
     border-radius: 5px;
     margin-left: 20px;
     margin-bottom: 5px;
-    
+
     z-index: 1;
-    
+
     background-color: #99e2d0;
 
     /*texte*/
@@ -1429,21 +1404,34 @@
     font-weight: 200;
   }
 
+  .with_icon a {   /*texte du footer desktop*/
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    left: 100px;
+    right: 100px;
+  }
+
   footer .fas {
     margin-right: 15px;
     color: white;
   }
+  /*icones du footer*/
   footer .fa-utensils {
-    margin-right: 23px;
+    margin-right: 5px;
+  }
+  footer .fa-hands-helping {
+    margin-right: 5px;
   }
 
   .footer_logo img {
     /*Logo du footer*/
     width: 50%;
-    color: white;
   }
-  
+
   footer ul {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -1482,7 +1470,6 @@
     width: 100%;
   }
 }
-
 
 footer {
   background-color: #353535;
