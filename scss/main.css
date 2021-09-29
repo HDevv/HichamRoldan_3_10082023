@@ -955,22 +955,22 @@
     -webkit-text-stroke-color: black;
     -webkit-background-clip: text;
     background-clip: text;
+    top: 20px;
   }
 
   .fa-heart:hover::before {
     animation: progress-heart 0.8s ease;
     background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
     background-size: auto;
-    /* c'est ce qui fait que le dégradé évolue */
-    background-position: bottom;
+    /*c'estcequifaitqueledégradéévolue*/background-position: bottom;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    /*rognage au text */
-    -webkit-text-fill-color: transparent;
+    /*rognageautext*/-webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: transparent;
+    -webkit-animation: progress-heart 0.8s ease;
     top: 20px;
-  }
+}
 
   .menu__btn:hover .menu__like--noBg {
     opacity: 1;
