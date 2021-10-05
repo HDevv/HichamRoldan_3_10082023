@@ -949,7 +949,6 @@
   .fa-heart::before {
     /*coeur blanc avec contour, puis remplissage dégradé*/
     content: "";
-    position: absolute;
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
