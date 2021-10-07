@@ -376,10 +376,14 @@
     top: 0;
     bottom: 0;
     transform-origin: right 50%;
-    transition: rotate 0.5s;
+    transition: 0.5s;
     right: -49px;
     width: 17px;
-  }
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
   .cardmenu:hover .menu_txt {
     width: 60%;
   }
@@ -1040,8 +1044,7 @@
     top: 30%;
   }
   .box_hover {
-    /*animation verte des menus*/
-    display: flex;
+    /*animationvertedesmenus*/display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -1053,10 +1056,14 @@
     top: 0;
     bottom: 0;
     transform-origin: right 50%;
-    transition: rotate 0.5s;
+    transition: 0.5s;
     right: -49px;
     width: 17px;
-  }
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
   .cardmenu:hover .menu_txt {
     width: 60%;
   }
