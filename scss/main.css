@@ -87,8 +87,8 @@
     font-family: "shrikhand";
   }
   a {
-    color: #2b2b2b
-  };
+    color: #2b2b2b;
+  }
   p {
     font-family: "roboto", sans-serif;
   }
@@ -754,6 +754,7 @@
     margin-right: 5px;
   }
 }
+
 /*------------------VERSION DESKTOP-----------------------*/
 
 @media (min-width: 655px) {
@@ -799,7 +800,6 @@
     /*LOCALISATION*/
     margin-left: 45%;
     display: flex;
-    align-items: row;
     margin-top: 30px;
     margin-bottom: 0px;
     font-size: 20px;
@@ -989,7 +989,6 @@
   /*taille du coeur*/
   .like2 .fa-heart {
     font-size: 1.5em;
-    opacity: transparent;
   }
   .like2 {
     height: 3rem;
@@ -1039,7 +1038,6 @@
     position: absolute;
     right: 5px;
     top: 30%;
-    size: 5em;
   }
   .box_hover {
     /*animation verte des menus*/
