@@ -1,3 +1,15 @@
+body {
+  width: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding-left: 2rem;
+}
 /*LOADER*/
 
 .full-conainer {
@@ -85,6 +97,7 @@
 
   h1 {
     font-family: "shrikhand";
+    padding: 0;
   }
   a {
     color: #2b2b2b;
@@ -301,7 +314,6 @@
     transform: scale(1.01);
   }
 
-  
   .btn_nouveau p {
     background-color: #99e2d0;
     color: #1c9965;
@@ -383,7 +395,7 @@
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-}
+  }
   .cardmenu:hover .menu_txt {
     width: 60%;
   }
@@ -674,7 +686,6 @@
     border-radius: 5px;
   }
 
-
   .cover_img {
     /*images des restaurants*/
     height: 217px;
@@ -742,7 +753,8 @@
     padding-left: 0%;
   }
 
-  .with_icon a {   /*texte du footer mobile*/
+  .with_icon a {
+    /*texte du footer mobile*/
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -876,7 +888,8 @@
   }
 
   .etape_text {
-    margin-left: 80px;
+    padding-left: 1rem;
+    font-size: auto;
   }
 
   .etape i {
@@ -884,7 +897,8 @@
   }
 
   .function__card {
-    margin-bottom: 50px;
+    padding-left: 2rem;
+    padding-bottom: 50px;
   }
 
   .etape {
@@ -965,15 +979,17 @@
     animation: progress-heart 0.8s ease;
     background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
     background-size: auto;
-    /*c'estcequifaitqueledégradéévolue*/background-position: bottom;
+    /*c'estcequifaitqueledégradéévolue*/
+    background-position: bottom;
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    /*rognageautext*/-webkit-text-fill-color: transparent;
+    /*rognageautext*/
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 0px;
     -webkit-text-stroke-color: transparent;
     -webkit-animation: progress-heart 0.8s ease;
     top: 20px;
-}
+  }
 
   .menu__btn:hover .menu__like--noBg {
     opacity: 1;
@@ -1044,7 +1060,8 @@
     top: 30%;
   }
   .box_hover {
-    /*animationvertedesmenus*/display: flex;
+    /*animationvertedesmenus*/
+    display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -1063,7 +1080,7 @@
     -moz-transition: 0.5s;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
-}
+  }
   .cardmenu:hover .menu_txt {
     width: 60%;
   }
@@ -1254,7 +1271,10 @@
   }
 
   main section .foodcards {
+    display: flex;
+    flex-direction: column;
     margin-top: 0;
+    width: 80%;
   }
 
   .foodcards .cardmenu {
@@ -1410,7 +1430,8 @@
     font-weight: 200;
   }
 
-  .with_icon a {   /*texte du footer desktop*/
+  .with_icon a {
+    /*texte du footer desktop*/
     color: white;
     font-size: 16px;
     font-weight: bold;
